@@ -10,3 +10,13 @@ spring:
     name: user-center
 server:
   port: 8081
+
+wx:
+  miniapp:
+    appid: wx4978c25e96202da5
+    secret: 17188f838602f965d83a47b139501e0b
+
+jwt:
+  secret: aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrsssttt1234
+  # 有效期，单位秒，默认2周
+  expire-time-in-second: 1209600

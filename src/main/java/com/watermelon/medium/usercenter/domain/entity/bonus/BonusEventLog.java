@@ -2,6 +2,8 @@ package com.watermelon.medium.usercenter.domain.entity.bonus;
 
 import java.util.Date;
 import javax.persistence.*;
+
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,6 +11,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@Builder
 @Table(name = "bonus_event_log")
 public class BonusEventLog {
     /**
