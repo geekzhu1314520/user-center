@@ -36,12 +36,15 @@ public class UserServiceImpl implements UserService {
 
         //2.生成新用户
         if (user == null) {
+            Date now = new Date();
             user = User.builder()
                     .wxId(openId)
                     .wxNickname(loginDTO.getWxNickname())
                     .roles("user")
                     .avatarUrl(loginDTO.getAvatarUrl())
                     .bonus(0)
+                    .createTime(now)
+                    .updateTime(now)
                     .build();
             userMapper.insertSelective(user);
         }

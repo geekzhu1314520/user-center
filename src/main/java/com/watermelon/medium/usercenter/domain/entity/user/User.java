@@ -3,14 +3,11 @@ package com.watermelon.medium.usercenter.domain.entity.user;
 import java.util.Date;
 import javax.persistence.*;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
-@Getter
-@Setter
-@ToString
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @Table(name = "user")
 public class User {
